@@ -1,6 +1,12 @@
 body {
   font-family: 'Lato';
 }
+#about{
+
+}
+.exhibitions{
+  background-color: white;
+}
 
 #site-name{
   font-family: 'Indie Flower', cursive;
@@ -18,7 +24,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Indie Flower', cursive;
 }
 
 hr.star-light,
@@ -49,7 +55,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #d5dc8a;
+  background-color: #18BC9C;
 }
 
 hr.star-dark {
@@ -107,7 +113,7 @@ section h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Indie Flower', cursive;
 }
 
 #mainNav .navbar-brand {
@@ -124,7 +130,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #2adc43;
+  color: #18BC9C;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -132,7 +138,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #c569dc;
+  color: #18BC9C;
 }
 
 #mainNav .navbar-toggler {
@@ -159,11 +165,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #2179dc;
+    background: #18BC9C;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1bd9dc;
+    background: #18BC9C;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -322,7 +328,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #dc8d1c;
+  color: #18BC9C;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -330,8 +336,8 @@ form .row:first-child .floating-label-form-group {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #2C3E50;
   color: #fff;
 }
@@ -341,7 +347,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #dcbdce;
+  color: #18BC9C;
 }
 
 a:focus, a:hover, a:active {
@@ -353,7 +359,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #a9dca4 !important;
+  background-color: #18BC9C !important;
 }
 
 .bg-secondary {
@@ -361,7 +367,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #dc3545 !important;
+  color: #18BC9C !important;
 }
 
 .text-secondary {
@@ -369,8 +375,8 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
