@@ -1,8 +1,17 @@
 @mixin body-font() {
-  font-family: 'Lato';
+  font-family: 'Quicksand';
 }
 
 @mixin heading-font() {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
+}
+
+@mixin navbar-font(){
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+@mixin madonia_art {
+  font-family: 'Satisfy', cursive;
 }

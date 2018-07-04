@@ -1,14 +1,26 @@
 // Styling for the navbar
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  @include heading-font;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  @include navbar-font;
   .navbar-brand {
     color: $white;
+    font-size:10vw;
+    @include madonia_art;
+
+  }
+  .translate {
+    color: white;
+    @include body-font;
+  }
+  .madonia_art{
+    font-size: 140%;
+
   }
   .navbar-nav {
     margin-top: 1rem;
-    letter-spacing: 0.0625rem;
+    letter-spacing: 0.0500rem;
+    font-size: 150%;
     li.nav-item {
       a.nav-link {
         color: $white;

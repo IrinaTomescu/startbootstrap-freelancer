@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
-  font-family: 'Lato';
+  font-family: 'Quicksand';
+  height: 100%;
 }
 
 h1,
@@ -9,7 +14,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
 }
 
 hr.star-light,
@@ -40,7 +45,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #f1b0b7;
+  background-color: #18BC9C;
 }
 
 hr.star-dark {
@@ -95,19 +100,31 @@ section h2 {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: 700;
-  font-family: 'Montserrat';
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
 }
 
 #mainNav .navbar-brand {
   color: #fff;
+  font-size: 10vw;
+  font-family: 'Satisfy', cursive;
+}
+
+#mainNav .translate {
+  color: white;
+  font-family: 'Quicksand';
+}
+
+#mainNav .madonia_art {
+  font-size: 140%;
 }
 
 #mainNav .navbar-nav {
   margin-top: 1rem;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 0.0500rem;
+  font-size: 150%;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
@@ -115,7 +132,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #f1b0b7;
+  color: #18BC9C;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -123,7 +140,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #f1b0b7;
+  color: #18BC9C;
 }
 
 #mainNav .navbar-toggler {
@@ -150,11 +167,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #f1b0b7;
+    background: #18BC9C;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #f1b0b7;
+    background: #18BC9C;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -177,7 +194,7 @@ header.masthead h1 {
 
 header.masthead h2 {
   font-size: 1.3rem;
-  font-family: 'Lato';
+  font-family: 'Quicksand';
 }
 
 @media (min-width: 992px) {
@@ -210,7 +227,7 @@ header.masthead h2 {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
+  background-color: rgba(24, 188, 156, 0.4);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -313,7 +330,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #f1b0b7;
+  color: #18BC9C;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -321,8 +338,8 @@ form .row:first-child .floating-label-form-group {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-color: #2C3E50;
   color: #fff;
 }
@@ -331,8 +348,23 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 
+.hero-image {
+  /* The image used */
+  background-image: url("/img/lav.jpg");
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: calc(6rem + 106px);
+  padding-bottom: 12rem;
+  margin-bottom: -1vw;
+  margin-top: 2vw;
+}
+
+/* Place text in the middle of the image */
 a {
-  color: #f1b0b7;
+  color: #18BC9C;
 }
 
 a:focus, a:hover, a:active {
@@ -344,7 +376,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #f1b0b7 !important;
+  background-color: #18BC9C !important;
 }
 
 .bg-secondary {
@@ -352,7 +384,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #f1b0b7 !important;
+  color: #18BC9C !important;
 }
 
 .text-secondary {
@@ -360,8 +392,8 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #f1b0b7;
-  border-color: #f1b0b7;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {

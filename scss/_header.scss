@@ -1,0 +1,20 @@
+.hero-image {
+  /* The image used */
+  background-image: url("/img/lav.jpg");
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: calc(6rem + 106px);
+  padding-bottom: 12rem;
+  margin-bottom: -1vw;
+  margin-top: 2vw;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+
+}
