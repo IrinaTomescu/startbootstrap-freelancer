@@ -29,6 +29,8 @@ var arrLang = {
         'exhibitions_title' : 'Exhibitions',
         'interviews_title' : 'Interviews',
 
+        'goToPage' : 'Go to page',
+        'close' : 'Close',
 
     },
 
@@ -72,6 +74,8 @@ var arrLang = {
         'exhibitions_title' : 'Expozitii',
         'interviews_title' : 'Interviuri',
 
+        'goToPage' : 'Deschide pagina',
+        'close' : 'Inchide',
 
     }
 };
