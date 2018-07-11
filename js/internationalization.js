@@ -44,9 +44,9 @@ var arrLang = {
 
         'about_section' : 'Sunt inspirata de evenimentele zilnice din viata mea, oamenii pe care ii cunosc sunt reflectati prin creativitatea mea si redati  pe panze.\n' +
         '\n' +
-        'Aleg picturile pe panze de dimensiuni mari, care se potrivesc cu inaltimea privitorului , desenez femei cu teluri , scopuri , fiind inspirata de culori, fetele oamenilor si evenimente importante din viata  mea.\n' +
+        'Aleg picturile pe panze de dimensiuni mari, care se potrivesc cu inaltimea privitorului , desenez feminitatea  cu teluri , scopuri , fiind inspirata de culori, fetele oamenilor si evenimente importante din viata  mea.\n' +
         '\n' +
-        'Potretele cu impact si chipuri pline de maiestrie pot deforma mentalitatea  privitorilor de sex masculin, rezultand imagini mari ale unor femei cu ambitie fara incetare inspirate de sentimente si momente cruciale de familiarizare.\n' +
+        'Potretele cu impact si chipuri pline de maiestrie pot deforma mentalitatea  , rezultand imagini mari ale unor personaje cu ambitie fara incetare inspirate de sentimente si momente cruciale de familiarizare.\n' +
         '\n' +
         'Prefer sa pictez pe suprafete mari si sa ma bucur  si de picturile murale cu o varietate de materiale incluzand  pereti, panze si sticla. Am tendinta de a picta cu vopsea acrilica , deoarece este foarte fluida iar culorile sunt destul de intense permitandu-mi sa impartasesc pasiunea mea pentru culori in creatiile si inovatiile mele.\n' +
         '\n' +
@@ -55,8 +55,7 @@ var arrLang = {
         'Cu un tonus tipic unei cuceritoare vitalitati, sper sa reusesc  sa transform obiectele vag perceptibile in minunate respirari uneori diafane alteori dese , puternice , care transforma visele si aspiratiile intr-o imbucuratoare, palpabila realitate .\n' +
         '\n' +
         '\n' +
-        'Sper ca picturile mele reusesc sa ofere ideile mele lumii , sa  inspire oamenii sa se focuseze pe lucrurile pozitive si sa asocieze totul sub influenta culorilor   in vietile noastre.\n',
-        'about_title' : 'Despre mine',
+        'Sper ca picturile mele reusesc sa ofere ideile mele lumii , sa  inspire oamenii sa se focuseze pe lucrurile pozitive si sa asocieze totul sub influenta culorilor   in vietile noastre.',
 
 
 
