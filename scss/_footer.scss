@@ -1,10 +1,16 @@
 .footer {
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   background-color: $secondary;
   color: $white;
 }
 
+.sr-contact{
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  margin-top: 5px;
+
+}
 .copyright {
   background-color: darken($secondary, 10%);
 }

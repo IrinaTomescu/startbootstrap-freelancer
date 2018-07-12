@@ -339,9 +339,15 @@ form .row:first-child .floating-label-form-group {
 
 .footer {
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   background-color: #2C3E50;
   color: #fff;
+}
+
+.sr-contact {
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  margin-top: 5px;
 }
 
 .copyright {
