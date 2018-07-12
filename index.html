@@ -103,7 +103,8 @@
         <hr class="star-light mb-5">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p class="lead lang" key="about_section">
+                <div id="summary">
+                <p class="lead collapse lang" id="collapseSummary" key="about_section">
                     I am inspired by everyday events in my life, by the people I meet; all are reflected through me into
                     my canvas.
                     I choose paintings on large canvases that match the height of my viewers, I draw women with purpose
@@ -123,6 +124,8 @@
                     and aspirations into a gratifying and perceptible reality.
                     I hope that my paintings aptly share my ideas with the world and inspire people to focus on the
                     positive things and to associate everything with colours influence in our lives. </p>
+                    <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -135,7 +138,7 @@
         <hr class="star-dark mb-5">
         <div class="row">
             <div class="col-md-6 col-lg-6">
-                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-picturaMurala">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                         <div class="portfolio-item-caption-content my-auto w-100 text-center text-dark overlay">
                             <span class="text-center text-dark">Pictura murala</span>
@@ -155,7 +158,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-lg-6">
-                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-picturaLaComanda">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                         <div class="portfolio-item-caption-content my-auto w-100 text-center text-dark">
                             <span class="text-center text-dark">Pictura la comanda</span>
@@ -165,7 +168,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-lg-6">
-                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-ilustratii">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                         <div class="portfolio-item-caption-content my-auto w-100 text-center text-dark">
                             <span class="text-center text-dark">Ilustratii</span>
@@ -559,7 +562,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 ml-auto text-center">
+            <div class="col-md-6 ml-auto text-center ">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item">
                         <i class="fa fa-phone fa-2x mb-3 sr-contact"></i>
@@ -593,7 +596,7 @@
 <!-- Portfolio Modals -->
 
 <!-- Portfolio Modal 1 -->
-<div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-picturaMurala">
     <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
             <i class="fa fa-3x fa-times"></i>
@@ -785,17 +788,18 @@
                 </div>
             </div>
         </div>
+        <!--Footer-->
         <div class="modal-footer justify-content-center">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss position-relative" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang portfolio-modal-dismiss" href="#"
+                    key="close">Close
+            </button>
         </div>
     </div>
 
 </div>
 
 <!-- Portfolio Modal 3 -->
-<div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-picturaLaComanda">
     <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
             <i class="fa fa-3x fa-times"></i>
@@ -803,25 +807,36 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="text-dark text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-dark text-uppercase mb-0">Pictura la comanda</h2>
                     <hr class="star-dark mb-5">
-                    <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                        assumenda
-                        ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores,
-                        vitae?
-                        Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                        <i class="fa fa-close"></i>
-                        Close Project</a>
+
+                    <p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Button with data-target
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang portfolio-modal-dismiss" href="#"
+                    key="close">Close
+            </button>
+        </div>
     </div>
+
 </div>
 
 <!-- Portfolio Modal 4 -->
-<div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-ilustratii">
     <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
             <i class="fa fa-3x fa-times"></i>
@@ -846,63 +861,13 @@
     </div>
 </div>
 
-<!-- Portfolio Modal 5 -->
-<div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-    <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-            <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-dark text-uppercase mb-0">Project Name</h2>
-                    <hr class="star-dark mb-5">
-                    <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                        assumenda
-                        ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores,
-                        vitae?
-                        Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                        <i class="fa fa-close"></i>
-                        Close Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 6 -->
-<div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-    <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-            <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-dark text-uppercase mb-0">Project Name</h2>
-                    <hr class="star-dark mb-5">
-                    <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                        assumenda
-                        ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores,
-                        vitae?
-                        Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                        <i class="fa fa-close"></i>
-                        Close Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!--Internationalization-->
 <script src="js/internationalization.js"></script>
+<!--Modals-->
+<script src="js/modals.js"></script>
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -914,27 +879,9 @@
 <!-- Custom scripts for this template -->
 <script src="js/freelancer.min.js"></script>
 
-<!--Google Translate-->
-
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'ro',
-            gaTrack: true,
-            gaId: 'UA-120812678-2'
-        }, 'google_translate_element');
-    }
-</script>
 <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-    $('.videoModal').on('hide.bs.modal', function (e) {
-        var $if = $(e.delegateTarget).find('iframe');
-        var src = $if.attr("src");
-        $if.attr("src", '/empty.html');
-        $if.attr("src", src);
-    });</script>
+
 </body>
 
 </html>

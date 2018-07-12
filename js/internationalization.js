@@ -56,6 +56,7 @@ var arrLang = {
         '\n' +
         '\n' +
         'Sper ca picturile mele reusesc sa ofere ideile mele lumii , sa  inspire oamenii sa se focuseze pe lucrurile pozitive si sa asocieze totul sub influenta culorilor   in vietile noastre.',
+        'about_title' : 'Despre mine',
 
 
 
