@@ -1,7 +1,6 @@
-jQuery(document).keypress(function(e) {
-    if (e.keyCode == 27) {
-        // window.close();
-        // jQuery(".portfolio-modal").modal('toggle');
-        jQuery(".portfolio-modal").modal('hide');
-    }
+$("#modalInterview5").on('hidden.bs.modal', function (e) {
+    $("#modalInterview5 iframe").attr("src", $("#modalInterview5 iframe").attr("src"));
+});
+$("#modalInterview6").on('hidden.bs.modal', function (e) {
+    $("#modalInterview6 iframe").attr("src", $("#modalInterview6 iframe").attr("src"));
 });
