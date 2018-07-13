@@ -459,5 +459,5 @@ a:focus, a:hover, a:active {
 
 #summary a:not(.collapsed):after {
   content: '- Read Less';
-  color: white;
+  color: #2C3E50;
 }
