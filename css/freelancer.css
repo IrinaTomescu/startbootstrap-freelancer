@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
   height: 100%;
 }
 
@@ -14,7 +14,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
 }
 
 hr.star-light,
@@ -114,7 +114,7 @@ section h2 {
 
 #mainNav .translate {
   color: white;
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
 }
 
 #mainNav .madonia_art {
@@ -123,7 +123,7 @@ section h2 {
 
 #mainNav .navbar-nav {
   margin-top: 1rem;
-  letter-spacing: 0.0500rem;
+  letter-spacing: 0.0600rem;
   font-size: 150%;
 }
 
@@ -194,7 +194,7 @@ header.masthead h1 {
 
 header.masthead h2 {
   font-size: 1.3rem;
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
 }
 
 @media (min-width: 992px) {
