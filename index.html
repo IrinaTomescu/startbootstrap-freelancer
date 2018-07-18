@@ -37,11 +37,11 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-sm bg-secondary fixed-top " id="mainNav">
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top " id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" id="site-name"><span
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><span
                 class="madonia_art">Madonia Art</br></span> by Lavinia Falcan</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded lang"
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded trn"
                 type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -51,36 +51,36 @@
         <div class="collapse navbar-collapse text-uppercase" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger lang" key="about"
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger trn"
                        href="#about">About</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger lang" key="portfolio"
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger trn"
                        href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger lang" key="exhibitions"
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger trn"
                        href="#exhibitions">Exhibitions</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger lang" key="interviews"
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger trn"
                        href="#interviews">Interviews</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger lang" key="contact" href="#contact">Contact</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger trn"href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown mx-0 mx-lg-1">
+                    <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="trn">Language</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item js-scroll-trigger lang_selector trn" href="#" data-value="en">English</a>
+                        <a class="dropdown-item js-scroll-trigger lang_selector trn" href="#" data-value="ro">Română</a>
+                    </div>
                 </li>
             </ul>
 
         </div>
-    </div>
-    <div class="btn-group btn-group-toggle position-relative" data-target="#navbarResponsive"
-         aria-controls="navbarResponsive" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-            <input type="radio" name="options" autocomplete="off" checked> <span class="translate" id="en">EN</span>
-        </label>
-        <label class="btn btn-secondary">
-            <input type="radio" name="options" autocomplete="off"> <span class="translate" id="ro">RO</span>
-        </label>
     </div>
 </nav>
 
@@ -99,12 +99,12 @@
 <!-- About Section -->
 <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
-        <h2 class="text-center text-uppercase text-white lang" key="about_title">About</h2>
+        <h2 class="text-center text-uppercase text-white trn">About</h2>
         <hr class="star-light mb-5">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div id="summary">
-                    <p class="lead collapse lang" id="collapseSummary" key="about_section">
+                    <p class="lead collapse trn" data-trn-key="about_section" id="collapseSummary" >
                         I am inspired by everyday events in my life, by the people I meet; all are reflected through me
                         into
                         my canvas.
@@ -145,7 +145,7 @@
 <!-- Portfolio Grid Section -->
 <section class="portfolio" id="portfolio">
     <div class="container">
-        <h2 class="text-center text-uppercase text-dark mb-0 lang" key="portfoliu_title">Portfolio</h2>
+        <h2 class="text-center text-uppercase text-dark mb-0 trn" key="portfoliu_title">Portfolio</h2>
         <hr class="star-dark mb-5">
         <div class="row">
             <div class="col-md-6 col-lg-6">
@@ -196,7 +196,7 @@
 <!-- Exhibitions Section -->
 <section class="bg-primary text-white mb-0" id="exhibitions">
     <div class="container">
-        <h2 class="text-center text-uppercase text-white lang" key="exhibitions_title">Exhibitions</h2>
+        <h2 class="text-center text-uppercase text-white trn" key="exhibitions_title">Exhibitions</h2>
         <hr class="star-light mb-5">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -241,7 +241,7 @@
 <!-- Interviews Section -->
 <section class="exhibitions text-dark mb-0" id="interviews">
     <div class="container">
-        <h2 class="text-center text-uppercase text-dark lang" key="interviews_title">Interviews</h2>
+        <h2 class="text-center text-uppercase text-dark trn" key="interviews_title">Interviews</h2>
         <hr class="star-dark mb-5">
         <div class="row">
             <div class="col-md-3 col-lg-3 ">
@@ -307,10 +307,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="https://artminds.ro/lavinia-iulia-falcan-pictorita-madonia-art/"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang" data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn" data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -343,10 +343,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="http://www.mediafax.ro/cultura-media/interviu-cu-romanca-lavinia-iulia-falcan-care-vinde-tablouri-la-new-york-si-picteaza-pe-ziduri-video-15812518"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang" data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn" data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -380,10 +380,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="http://www.pastrychef.ro/in-cofetarie/tendinte/lavinia-falcan-transforma-restaurante-galerii-de-arta"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang" data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn" data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -417,10 +417,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="https://curajromania.ro/romania-curajoasa/iulia-lavinia-falcan-artista-care-nu-se-teme-de-inaltimi"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang" data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn" data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -453,10 +453,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="https://www.youtube.com/watch?v=MprtCa3lo6g"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang " data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn " data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -489,10 +489,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="https://www.youtube.com/watch?v=mncPmJ9xDxI"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang" data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn" data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -526,10 +526,10 @@
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"><a target="_blank"
                                                                                                  href="http://orasulvechi.ro/prim-plan/cum-pictura-murala-dat-viata-multor-localuri-din-centrul-vechi-interviu-lavinia-iulia-falcan/"
-                                                                                                 class="lang"
+                                                                                                 class="trn"
                                                                                                  key="goToPage">Go to
                     page</a></button>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang" data-dismiss="modal"
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn" data-dismiss="modal"
                         key="close">Close
                 </button>
             </div>
@@ -636,7 +636,7 @@
         </div>
         <!--Footer-->
         <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang portfolio-modal-dismiss"
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn portfolio-modal-dismiss"
                     href="#"
                     key="close">Close
             </button>
@@ -815,7 +815,7 @@
         </div>
         <!--Footer-->
         <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang portfolio-modal-dismiss"
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn portfolio-modal-dismiss"
                     href="#"
                     key="close">Close
             </button>
@@ -846,7 +846,7 @@
         </div>
         <!--Footer-->
         <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang portfolio-modal-dismiss"
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn portfolio-modal-dismiss"
                     href="#"
                     key="close">Close
             </button>
@@ -880,8 +880,8 @@
                                     <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                         <div class="control-group">
                                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                <p class="lang" key="contact_name">Name</p>
-                                                <input class="form-control lang" key="contact_name" id="name"
+                                                <p class="trn" key="contact_name">Name</p>
+                                                <input class="form-control trn" key="contact_name" id="name"
                                                        type="text"
                                                        required="required"
                                                        data-validation-required-message="Please enter your name."
@@ -891,7 +891,7 @@
                                         </div>
                                         <div class="control-group">
                                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                <p class="lang" key="contact_email">Email Address</p>
+                                                <p class="trn" key="contact_email">Email Address</p>
                                                 <input class="form-control" id="email" type="email" required="required"
                                                        data-validation-required-message="Please enter your email address."
                                                        placeholder="john.doe@example.com">
@@ -900,7 +900,7 @@
                                         </div>
                                         <div class="control-group">
                                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                <p class="lang" key="contact_phone">Phone Number</p>
+                                                <p class="trn" key="contact_phone">Phone Number</p>
                                                 <input class="form-control" id="phone" type="tel" required="required"
                                                        data-validation-required-message="Please enter your phone number."
                                                        placeholder="+40-000-000-000">
@@ -909,26 +909,26 @@
                                         </div>
                                         <div class="control-group">
                                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                <p class="lang" key="contact_city">City</p>
+                                                <p class="trn" key="contact_city">City</p>
                                                 <input class="form-control" id="city" type="text" required="required"
-                                                       data-validation-required-message="Please enter your phone number."
+                                                       data-validation-required-message="Please enter your city."
                                                        placeholder="Bucharest">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="control-group">
                                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                <p class="lang" key="contact_city">Painting dimensions</p>
+                                                <p class="trn" key="contact_city">Painting dimensions</p>
                                                 <input class="form-control" id="dimensions" type="text"
                                                        required="required"
-                                                       data-validation-required-message="Please enter your phone number."
+                                                       data-validation-required-message="Please enter painting dimensions."
                                                        placeholder="Ex : 100x100 cm">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="control-group">
                                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                                <p class="lang" key="contact_message">Painting theme</p>
+                                                <p class="trn" key="contact_message">Painting theme</p>
                                                 <textarea class="form-control" id="theme" rows="3" required="required"
                                                           data-validation-required-message="Please enter a message."
                                                           placeholder="Ex : imi doresc un tablou / o pictură murală   care sa aiba ca temă muzica etc "></textarea>
@@ -938,7 +938,7 @@
                                         <br>
                                         <div id="success"></div>
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-xl lang" key='contact_send'
+                                            <button type="submit" class="btn btn-primary btn-xl trn" key='contact_send'
                                                     id="sendMessageButton">Send
                                             </button>
                                         </div>
@@ -954,7 +954,7 @@
         </div>
         <!--Footer-->
         <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 lang portfolio-modal-dismiss"
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 trn portfolio-modal-dismiss"
                     href="#"
                     key="close">Close
             </button>
@@ -966,6 +966,8 @@
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
+<!--translate-->
+<script src="vendor/jquery-translate/jquery.translate.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!--Internationalization-->
 <script src="js/internationalization.js"></script>
