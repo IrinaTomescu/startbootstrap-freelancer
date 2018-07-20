@@ -8,6 +8,19 @@
     @include madonia_art;
 
   }
+  .dropdown-menu{
+    background: $secondary;
+  }
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: $white;
+    background: $primary;
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
+  }
   .translate {
     color: white;
     @include body-font;

@@ -62,9 +62,76 @@ $(function() {
             "\n" +
             "Sper că picturile mele reușesc să ofere ideile mele lumii, să inspire oamenii să se focuseze pe lucrurile pozitive și să asocieze totul sub influența culorilor în viețile noastre."
         },
-
-
-
+        Close:{
+          ro: "Închide"
+        },
+        "Go to page":{
+            ro: "Deschide pagina"
+        },
+        contactorder: {
+            en: "Contact & Painting order",
+            ro: "Contact și picturi la comandă"
+        },
+        exp_armony:{
+            en: "2018 - Armory Artweeks New York – March – New York, United States of America",
+            ro: "2018 - Armory Artweeks New York – Martie – New York, Statele Unite ale Americii"
+        },
+        exp_spectrum:{
+            en: "2017 - Spectrum Miami Art Fair – December – Miami, United States of America",
+            ro: "2017 - Târgul de artă Spectrum Miami – Decembrie – Miami, Statele Unite ale Americii"
+        },
+        exp_monaco:{
+            en: "2017 - Monaco Art Fair – September - Monte Carlo",
+            ro: "2017 - Târgul de artă Monaco – Septembrie - Monte Carlo"
+        },
+        exp_mortalCoil:{
+            en: "2017 - Group exhibition – „Mortal Coil” – Manhattan Art and Antiques – New York, United States of America",
+            ro: "2017 - Expoziție de grup – „Mortal Coil” – Manhattan Art and Antiques – New York, Statele Unite ale Americii"
+        },
+        exp_plurality:{
+            en: "2017 - Group exhibition – „Plurality of Expression” – Agora Gallery – New York, United States of America",
+            ro: "2017 - Expoziție de grup – „Plurality of Expression” – Galeria Agora – New York, Statele Unite ale Americii"
+        },
+        exp_calderon: {
+            en: "2016 - Solo exhibition – „Love of women” – Calderon Institute – Bucharest, Romania",
+            ro: "2016 - Expoziție solo – „Love of women” – Institutul Calderon – București, România"
+        },
+        exp_elite:{
+            en: "2016 - Group exhibition – „Summery” – Elite Prof Art Gallery, Bucharest, Romania",
+            ro: "2016 - Expoziție de grup – „Summery” – Galeria de artă Elite Prof, București, România"
+        },
+        exp_puraVida:{
+            en: "2016 - Group exhibition – „Feel the Bucharest” – Pura Vida Hostel- Bucharest, Romania",
+            ro: "2016 - Expoziție de grup – „Feel the Bucharest” – Hostelul Pura Vida, București, România"
+        },
+        exp_rest:{
+            en: "2015 - Solo exhibition – „Restaurants” – Bucharest, Romania",
+            ro: "2015 - Expoziție solo – „Restaurante” – București, România"
+        },
+        exp_dream1:{
+            en: "2013 - Group Exhibition „Dreams Paintings” – Palace of Parliament edition II, Bucharest, Romania",
+            ro: "2013 - Expoziție de grup „Dreams Paintings” – Palatul Parlamentului ediția a II-a, București, România"
+        },
+        exp_dream2:{
+            en: "2011 - Group Exhibition „Dreams Paintings” – Palace of Parliament edition I, Bucharest, Romania",
+            ro: "2011 - Expoziție de grup „Dreams Paintings” – Palatul Parlamentului ediția a I-a, București, România"
+        },
+        exp_littleBar:{
+            en: "2010 - Solo exhibition – „The Little Bar” – Bucharest, Romania",
+            ro: "2010 - Expoziție solo – „The Little Bar” – București, România"
+        },
+        "Mural paintings":{
+            ro: "Picturi murale"
+        },
+        "Paintings on canvas":{
+            ro: "Picturi pe pânză"
+        },
+        Illustrations:{
+            ro: "Ilustrații"
+        },
+        "Contact me":{
+            ro: "Contactează-mă"
+        }
 
 
 
