@@ -62,24 +62,53 @@
     this.g = this.get;
 
 
-    
-    //main
-    this.find(settings.css).each(function(i) {
-      var $this = $(this);
 
-      var trn_key = $this.attr("data-trn-key");
-      if (!trn_key) {
-        trn_key = $this.html();
-        $this.attr("data-trn-key", trn_key);   //store key for next time
-      }
 
-      $this.html(that.get(trn_key));
-    });
-    
-    
-		return this;
-		
-		
+
+      //main
+      this.find(settings.css).each(function(i) {
+          var $this = $(this);
+
+          var trn_key = $this.attr("data-trn-key");
+          if (!trn_key) {
+              trn_key = $this.html();
+              $this.attr("data-trn-key", trn_key);   //store key for next time
+          }
+
+          var trn_value = $this.attr("data-trn-value"); // Translate attribute value="" (e.g = submit button)
+          if (!trn_value) {
+              trn_value = $this.val();
+              $this.attr("data-trn-value", trn_value);   //store key for next time
+          }
+
+          var trn_holder = $this.attr("data-trn-holder"); // Translate attribute placeholder="" (e.g = input text field)
+          if (!trn_holder) {
+              trn_holder = $(this).data("placeholder");
+              $this.attr("data-trn-holder", trn_holder);   //store key for next time
+          }
+
+          var trn_validation = $this.attr("data-trn-validation"); // Translate attribute placeholder="" (e.g = input text field)
+          if (!trn_validation) {
+              trn_validation = $(this).data("data-validation-required-message");
+              $this.attr("data-trn-validation", trn_validation);   //store key for next time
+          }
+
+
+
+          var trn_title = $this.attr("data-trn-title"); // Translate attribute title=""
+          if (!trn_title) {
+              trn_title = $(this).data("title");
+              $this.attr("data-trn-title", trn_title);   //store key for next time
+
+              $this.html(that.get(trn_key)); // plain text html
+              $this.val(that.get(trn_value)); // attribute value
+              $(this).attr("placeholder", that.get(trn_holder)); // attribute placeholder
+              $(this).attr("data-validation-required-message", that.get(trn_validation)); // attribute data-validation-required-message
+              $(this).attr("title", that.get(trn_title)); // attribute title
+          }});
+
+      return this;
 
   };
+
 })(jQuery);

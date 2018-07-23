@@ -131,7 +131,52 @@ $(function() {
         },
         "Contact me":{
             ro: "Contactează-mă"
+        },
+        Cancel:{
+            ro: "Anulează"
+        },
+        Send:{
+            ro: "Trimite"
+        },
+        paintTheme:{
+            en: "Painting theme",
+            ro: "Tema picturii"
+        },
+        msg:{
+            en:"Message",
+            ro:"Mesaj"
+        },
+        email:{
+            en: "Email Address",
+            ro: "Adresa de email"
+        },
+        name:{
+            en: "Name",
+            ro: "Nume"
+        },
+        phone:{
+            en: "Phone",
+            ro: "Număr de telefon"
+        },
+        city:{
+            en: "City",
+            ro: "Oraș"
+        },
+        paintDim:{
+            en: "Painting Dimensions",
+            ro: "Dimensiunile picturii"
+        },
+        "Painting order":{
+            ro: "Comandă de pictură"
+        },
+        "Contact Me":{
+            ro: "Contactează-mă"
+        },
+        "Place an order":{
+            ro: "Plasează o comandă"
         }
+
+
 
 
 
@@ -150,18 +195,4 @@ $(function() {
         ev.preventDefault();
     });
 
-
-
 });
- /*
-
-        'contact_title' : 'Contacteaza-ma',
-        'contact_name' : 'Nume',
-        'contact_email' : 'Adresa de email',
-        'contact_mail_danger' : 'Te rog adauga adresa de email',
-        'contact_phone' : 'Numarul de telefon',
-        'contact_message' : 'Mesaj',
-        'contact_send' : 'Trimite',
-
-        'goToPage' : 'Deschide pagina',
-        'close' : 'Inchide',*/
