@@ -377,10 +377,11 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 
-.hero-image {
-  /* The image used */
+/*.hero-image {
+  !* The image used *!
   background-image: url("/img/lav.jpg");
-  /* Position and center the image to scale nicely on all screens */
+
+  !* Position and center the image to scale nicely on all screens *!
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -389,8 +390,8 @@ form .row:first-child .floating-label-form-group {
   padding-bottom: 12rem;
   margin-bottom: -1vw;
   margin-top: 2vw;
-}
 
+}*/
 /* Place text in the middle of the image */
 a {
   color: #18BC9C;
