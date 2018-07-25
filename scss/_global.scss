@@ -15,7 +15,10 @@ h5,
 h6 {
   @include heading-font;
 }
-
+#exhibtext{
+  font-size: 1.25rem;
+  line-height: 2;
+}
 // Custom Horizontal Rule with Star Icon
 hr.star-light,
 hr.star-dark {
