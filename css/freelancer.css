@@ -229,6 +229,19 @@ header.masthead h2 {
   }
 }
 
+.flex-column {
+  max-width: 260px;
+}
+
+img {
+  margin: 5px;
+}
+
+.scale {
+  transform: scaleY(1.05);
+  padding-top: 5px;
+}
+
 .portfolio {
   margin-bottom: -15px;
 }
