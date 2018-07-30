@@ -23,24 +23,6 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.css" rel="stylesheet">
 
-    <style>
-        .column {
-            -ms-flex: 20%; /* IE 10 */
-            flex: 20%;
-            padding: 0 4px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-        }
-        .scale {
-            transform: scaleY(1.05);
-            padding-top: 5px;
-        }
-
-    </style>
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -198,9 +180,9 @@
                     <img class="img-fluid img-thumbnail" src="img/portfolio/5_optimized.jpg" alt="">
                 </div>
                 <div class="card-block px-5 pt-5">
-                    <h4 class="card-title" id="myHeader">
+                    <h4 class="card-title">
                         <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                           aria-controls="collapseTwo" class="ceva">Paintings on canvas</a>
+                           aria-controls="collapseTwo" onclick="five()">Paintings on canvas</a>
                     </h4>
                     <p class="card-text">Description</p>
                 </div>
@@ -209,12 +191,13 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="column">
-                                <img src="img/picturaPePanza/1optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/2optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/3optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/4optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/5optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/6optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/19optimized.jpg" class="img-fluid" style="width:100%" id="myImg">
+                                <img src="img/picturaPePanza/3optimized.jpg" class="img-fluid" style="width:100%" >
+                                <img src="img/picturaPePanza/4optimized.jpg" class="img-fluid" style="width:100%" >
+                                <img src="img/picturaPePanza/5optimized.jpg" class="img-fluid" style="width:100%" >
+                                <img src="img/picturaPePanza/6optimized.jpg" class="img-fluid" style="width:100%" >
+                                <img src="img/picturaPePanza/29optimized.jpg" class="img-fluid" style="width:100%" >
+                                <img src="img/picturaPePanza/30optimized.jpg" class="img-fluid" style="width:100%" >
                             </div>
                             <div class="column">
                                 <img src="img/picturaPePanza/7optimized.jpg" class="img-fluid" style="width:100%">
@@ -222,64 +205,66 @@
                                 <img src="img/picturaPePanza/9optimized.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/10optimized.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/11optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/12optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/12optimized-min.jpg" class="img-fluid" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/picturaPePanza/13optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/14optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/13optimized-min.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/14optimized-min.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/15optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/16optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/17optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/18optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/16optimized-min.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/18optimized-min.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/21optimized.jpg" class="img-fluid" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/picturaPePanza/19optimized.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/20optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/21optimized.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/22optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/23optimized.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/24optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/2optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/27optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/17optimized.jpg" class="img-fluid" style="width:100%">
                             </div>
                             <div class="column">
                                 <img src="img/picturaPePanza/25optimized.jpg" class="img-fluid" style="width:100%">
                                 <img src="img/picturaPePanza/26optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/27optimized.jpg" class="img-fluid scale" style="width:100%">
                                 <img src="img/picturaPePanza/28optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/29optimized.jpg" class="img-fluid" style="width:100%">
-                                <img src="img/picturaPePanza/30optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/23optimized.jpg" class="img-fluid" style="width:100%">
+                                <img src="img/picturaPePanza/1optimized.jpg" class="img-fluid" style="width:100%">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card flex-row flex-wrap">
-            <div class="card-header border-0" id="headingThree">
-                <img class="img-fluid img-thumbnail" src="img/portfolio/Ilustratie_optimimzed.jpg" alt="">
-            </div>
-            <div class="card-block px-5 pt-5">
-                <h4 class="card-title">
-                    <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                       aria-controls="collapseThree">Paintings on canvas</a>
-                </h4>
-                <p class="card-text">Description</p>
-            </div>
+            <div class="card flex-row flex-wrap">
+                <div class="card-header border-0" id="headingThree">
+                    <img class="img-fluid img-thumbnail" src="img/portfolio/Ilustratie_optimimzed.jpg" alt="">
+                </div>
+                <div class="card-block px-5 pt-5">
+                    <h4 class="card-title">
+                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                           aria-controls="collapseThree">Illustrations</a>
+                    </h4>
+                    <p class="card-text">Description</p>
+                </div>
 
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                        nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    </div>
 </section>
 
 
@@ -752,7 +737,6 @@
 </div>
 
 <!--Order Painting Modal-->
-
 <div class="portfolio-modal mfp-hide" id="orderPainting">
     <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -839,6 +823,14 @@
 </div>
 
 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <!--translate-->
@@ -868,27 +860,7 @@
 <!--Bootstrap Toggle-->
 <script src="js/bootstrap-toggle.min.js"></script>
 
-<!--<script>-->
-
-    <!--function five() {-->
-        <!--for (i = 0; i < elements.length; i++) {-->
-            <!--elements[i].style.msFlex = "20%";  // IE10-->
-            <!--elements[i].style.flex = "20%";-->
-        <!--}-->
-    <!--}-->
-
-    <!--// Add active class to the current button (highlight it)-->
-    <!--var header = document.getElementById("myHeader");-->
-    <!--var btns = header.getElementsByClassName("ceva");-->
-    <!--for (var i = 0; i < btns.length; i++) {-->
-        <!--btns[i].addEventListener("click", function() {-->
-            <!--var current = document.getElementsByClassName("active");-->
-            <!--current[0].className = current[0].className.replace(" active", "");-->
-            <!--this.className += " active";-->
-        <!--});-->
-    <!--}-->
-
-<!--</script>-->
+<script src="js/portfolio.js"></script>
 
 </body>
 
