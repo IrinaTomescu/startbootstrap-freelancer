@@ -229,221 +229,6 @@ header.masthead h2 {
   }
 }
 
-.row {
-  display: -ms-flexbox;
-  /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create 5 equal columns that sits next to each other */
-.column {
-  -ms-flex: 20%;
-  /* IE 10 */
-  flex: 20%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/*!* Responsive layout - makes a two column-layout instead of four columns *!
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-!* Responsive layout - makes the two columns stack on top of each other instead of next to each other *!
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}*/
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {
-  opacity: 0.7;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 9rem;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* The Close Button */
-.close {
-  position: relative;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
-.portfolio {
-  margin-bottom: -15px;
-}
-
-.portfolio .portfolio-item {
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  margin-bottom: 15px;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption {
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background-color: rgba(44, 62, 80, 0.7);
-}
-
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
-}
-
-@media (min-width: 576px) {
-  .portfolio {
-    margin-bottom: -30px;
-  }
-  .portfolio .portfolio-item {
-    margin-bottom: 30px;
-  }
-}
-
-.portfolio-modal .portfolio-modal-dialog {
-  padding: 3rem 1rem;
-  min-height: calc(100vh - 2rem);
-  margin: 1rem calc(1rem - 8px);
-  position: relative;
-  z-index: 2;
-  -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.portfolio-modal .portfolio-modal-dialog .close-button {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-
-.portfolio-modal .portfolio-modal-dialog .close-button i {
-  line-height: 38px;
-}
-
-.portfolio-modal .portfolio-modal-dialog h2 {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  .portfolio-modal .portfolio-modal-dialog {
-    min-height: 100vh;
-    padding: 5rem;
-    margin: 3rem calc(3rem - 8px);
-  }
-  .portfolio-modal .portfolio-modal-dialog h2 {
-    font-size: 3rem;
-  }
-}
-
 .floating-label-form-group {
   position: relative;
   border-bottom: 1px solid #e9ecef;
@@ -639,128 +424,97 @@ a:focus, a:hover, a:active {
   color: #2C3E50;
 }
 
-/*! ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.css v2.2.0
- * http://www.bootstraptoggle.com
- * ========================================================================
- * Copyright 2014 Min Hur, The New York Times Company
- * Licensed under MIT
- * ======================================================================== */
-.checkbox label .toggle,
-.checkbox-inline .toggle {
-  margin-left: -20px;
-  margin-right: 5px;
+.row {
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.toggle {
+/* Create 5 equal columns that sits next to each other */
+.column {
+  -ms-flex: 20%;
+  /* IE 10 */
+  flex: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.portfolio {
+  margin-bottom: -15px;
+}
+
+.portfolio .portfolio-item {
   position: relative;
-  overflow: hidden;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 15px;
 }
 
-.toggle input[type="checkbox"] {
-  display: none;
+.portfolio .portfolio-item .portfolio-item-caption {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background-color: rgba(24, 188, 156, 0.9);
 }
 
-.toggle-group {
-  position: absolute;
-  width: 200%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  transition: left 0.35s;
-  -webkit-transition: left 0.35s;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
 }
 
-.toggle.off .toggle-group {
-  left: -100%;
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
 }
 
-.toggle-on {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 50%;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
+@media (min-width: 576px) {
+  .portfolio {
+    margin-bottom: -30px;
+  }
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
 }
 
-.toggle-off {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-}
-
-.toggle-handle {
+.portfolio-modal .portfolio-modal-dialog {
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 2rem);
+  margin: 1rem calc(1rem - 8px);
   position: relative;
-  margin: 0 auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 100%;
-  width: 0px;
-  border-width: 0 1px;
+  z-index: 2;
+  -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.toggle.btn {
-  min-width: 59px;
-  min-height: 34px;
+.portfolio-modal .portfolio-modal-dialog .close-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
-.toggle-on.btn {
-  padding-right: 24px;
+.portfolio-modal .portfolio-modal-dialog .close-button i {
+  line-height: 38px;
 }
 
-.toggle-off.btn {
-  padding-left: 24px;
+.portfolio-modal .portfolio-modal-dialog h2 {
+  font-size: 2rem;
 }
 
-.toggle.btn-lg {
-  min-width: 79px;
-  min-height: 45px;
-}
-
-.toggle-on.btn-lg {
-  padding-right: 31px;
-}
-
-.toggle-off.btn-lg {
-  padding-left: 31px;
-}
-
-.toggle-handle.btn-lg {
-  width: 40px;
-}
-
-.toggle.btn-sm {
-  min-width: 50px;
-  min-height: 30px;
-}
-
-.toggle-on.btn-sm {
-  padding-right: 20px;
-}
-
-.toggle-off.btn-sm {
-  padding-left: 20px;
-}
-
-.toggle.btn-xs {
-  min-width: 35px;
-  min-height: 22px;
-}
-
-.toggle-on.btn-xs {
-  padding-right: 12px;
-}
-
-.toggle-off.btn-xs {
-  padding-left: 12px;
+@media (min-width: 768px) {
+  .portfolio-modal .portfolio-modal-dialog {
+    min-height: 100vh;
+    padding: 5rem;
+    margin: 3rem calc(3rem - 8px);
+  }
+  .portfolio-modal .portfolio-modal-dialog h2 {
+    font-size: 3rem;
+  }
 }
