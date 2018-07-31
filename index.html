@@ -25,12 +25,12 @@
 
     <!--Bootstrap Modal + Carousel Gallery-->
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!--Latest stable release of jQuery Core Library-->
-    <script src="https://code.jquery.com/jquery-1.12.2.min.js"
-            integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
-    <!--Bootstrap JS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        &lt;!&ndash;Latest stable release of jQuery Core Library&ndash;&gt;
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js"
+                integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+        &lt;!&ndash;Bootstrap JS&ndash;&gt;
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 
 </head>
 
@@ -162,8 +162,10 @@
         <div id="accordion">
             <div class="card flex-row flex-wrap">
                 <div class="card-header border-0 " id="headingOne">
-                    <img class="img-fluid img-thumbnail" src="img/portfolio/pictura%20pe%20pereti_optimiezed.jpg"
-                         alt="">
+                    <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                       aria-controls="collapseOne"><img class="img-fluid img-thumbnail"
+                                                        src="img/portfolio/pictura%20pe%20pereti_optimiezed.jpg"
+                                                        alt=""></a>
                 </div>
                 <div class="card-block px-5 pt-5">
                     <h4 class="card-title">
@@ -174,6 +176,12 @@
                 </div>
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
+
+                        <div id="accordionMural">
+
+
+                        </div>
+
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                         3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
                         laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
@@ -186,7 +194,10 @@
             </div>
             <div class="card flex-row flex-wrap">
                 <div class="card-header border-0" id="headingTwo">
-                    <img class="img-fluid img-thumbnail" src="img/portfolio/5_optimized.jpg" alt="">
+                    <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                       aria-controls="collapseTwo"> <img class="img-fluid img-thumbnail"
+                                                         src="img/portfolio/5_optimized.jpg" alt="">
+                    </a>
                 </div>
                 <div class="card-block px-5 pt-5">
                     <h4 class="card-title">
@@ -202,37 +213,37 @@
                         <div class="row">
                             <div class="column">
                                 <ul class="list-inline">
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="0">
                                             <img class="img-thumbnail" src="img/picturaPePanza/19optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="1">
                                             <img class="img-thumbnail" src="img/picturaPePanza/3optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="2">
                                             <img class="img-thumbnail" src="img/picturaPePanza/4optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="3">
                                             <img class="img-thumbnail" src="img/picturaPePanza/5optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="4">
                                             <img class="img-thumbnail" src="img/picturaPePanza/6optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="5">
                                             <img class="img-thumbnail" src="img/picturaPePanza/29optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="6">
                                             <img class="img-thumbnail" src="img/picturaPePanza/30optimized.jpg"><br>
                                         </a>
@@ -241,32 +252,32 @@
                             </div>
                             <div class="column">
                                 <ul class="list-inline">
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="7">
                                             <img class="img-thumbnail" src="img/picturaPePanza/7optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="8">
                                             <img class="img-thumbnail" src="img/picturaPePanza/8optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="9">
                                             <img class="img-thumbnail" src="img/picturaPePanza/9optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="10">
                                             <img class="img-thumbnail" src="img/picturaPePanza/10optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="11">
                                             <img class="img-thumbnail" src="img/picturaPePanza/11optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="12">
                                             <img class="img-thumbnail" src="img/picturaPePanza/12optimized.jpg"><br>
                                         </a>
@@ -275,32 +286,32 @@
                             </div>
                             <div class="column">
                                 <ul class="list-inline">
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="13">
                                             <img class="img-thumbnail" src="img/picturaPePanza/13optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="14">
                                             <img class="img-thumbnail" src="img/picturaPePanza/14optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="15">
                                             <img class="img-thumbnail" src="img/picturaPePanza/15optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="16">
                                             <img class="img-thumbnail" src="img/picturaPePanza/16optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="17">
                                             <img class="img-thumbnail" src="img/picturaPePanza/18optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="18">
                                             <img class="img-thumbnail" src="img/picturaPePanza/21optimized.jpg"><br>
                                         </a>
@@ -309,32 +320,32 @@
                             </div>
                             <div class="column">
                                 <ul class="list-inline">
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="19">
                                             <img class="img-thumbnail" src="img/picturaPePanza/20optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="20">
                                             <img class="img-thumbnail" src="img/picturaPePanza/22optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="21">
                                             <img class="img-thumbnail" src="img/picturaPePanza/24optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="22">
                                             <img class="img-thumbnail" src="img/picturaPePanza/2optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="23">
                                             <img class="img-thumbnail" src="img/picturaPePanza/27optimized.jpg"><br>
                                         </a>
                                     </li>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="24">
                                             <img class="img-thumbnail" src="img/picturaPePanza/17optimized.jpg"><br>
                                         </a>
@@ -343,23 +354,23 @@
                             </div>
                             <div class="column">
                                 <ul class="list-inline">
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="25">
                                             <img class="img-thumbnail" src="img/picturaPePanza/25optimized.jpg"><br>
                                         </a>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="26">
                                             <img class="img-thumbnail" src="img/picturaPePanza/26optimized.jpg"><br>
                                         </a>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="27">
                                             <img class="img-thumbnail" src="img/picturaPePanza/28optimized.jpg"><br>
                                         </a>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="28">
                                             <img class="img-thumbnail" src="img/picturaPePanza/23optimized.jpg"><br>
                                         </a>
-                                    <li data-toggle="modal" data-target="#myModal">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
                                         <a href="#myGallery" data-slide-to="29">
                                             <img class="img-thumbnail" src="img/picturaPePanza/1optimized.jpg"><br>
                                         </a>
@@ -374,7 +385,10 @@
             </div>
             <div class="card flex-row flex-wrap">
                 <div class="card-header border-0" id="headingThree">
-                    <img class="img-fluid img-thumbnail" src="img/portfolio/Ilustratie_optimimzed.jpg" alt="">
+                    <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                       aria-controls="collapseThree"> <img class="img-fluid img-thumbnail"
+                                                           src="img/portfolio/Ilustratie_optimimzed.jpg" alt="">
+                    </a>
                 </div>
                 <div class="card-block px-5 pt-5">
                     <h4 class="card-title">
@@ -531,7 +545,7 @@
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Name</label>
                             <input class="form-control trn" id="name" type="text" data-trn-holder="name"
-                                   placeholder="Name" required="required"
+                                   placeholder="Name" required="required" autocomplete='name'
                                    data-validation-required-message="Please enter your name.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -540,7 +554,7 @@
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Email Address</label>
                             <input class="form-control trn" id="email" type="email" data-trn-holder="email"
-                                   placeholder="Email Address" required="required"
+                                   placeholder="Email Address" required="required" autocomplete='email'
                                    data-validation-required-message="Please enter your email address.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -643,68 +657,67 @@
 
 
 <!--begin modal window-->
-<div class="modal fade" id="myModal">
+<div class="modal fade" id="myModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <!--<div class="pull-left">My Gallery Title</div>-->
                 <button type="button" class="close" data-dismiss="modal" title="Close"><span
-                        class="glyphicon glyphicon-remove"></span></button>
+                        class="fa fa-close"></span></button>
             </div>
             <div class="modal-body">
 
                 <!--begin carousel-->
                 <div id="myGallery" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
-                        <div class="item active"><img src="img/picturaPePanza/19optimized.jpg" alt="item0"></div>
-                        <div class="item"><img src="img/picturaPePanza/3optimized.jpg" alt="item1"></div>
-                        <div class="item"><img src="img/picturaPePanza/4optimized.jpg" alt="item2"></div>
-                        <div class="item"><img src="img/picturaPePanza/5optimized.jpg" alt="item3"></div>
-                        <div class="item"><img src="img/picturaPePanza/6optimized.jpg" alt="item4"></div>
-                        <div class="item"><img src="img/picturaPePanza/29optimized.jpg" alt="item5"></div>
-                        <div class="item"><img src="img/picturaPePanza/30optimized.jpg" alt="item6"></div>
-                        <div class="item"><img src="img/picturaPePanza/7optimized.jpg" alt="item7"></div>
-                        <div class="item"><img src="img/picturaPePanza/8optimized.jpg" alt="item8"></div>
-                        <div class="item"><img src="img/picturaPePanza/9optimized.jpg" alt="item9"></div>
-                        <div class="item"><img src="img/picturaPePanza/10optimized.jpg" alt="item10"></div>
-                        <div class="item"><img src="img/picturaPePanza/11optimized.jpg" alt="item11"></div>
-                        <div class="item"><img src="img/picturaPePanza/12optimized.jpg" alt="item12"></div>
-                        <div class="item"><img src="img/picturaPePanza/13optimized.jpg" alt="item13"></div>
-                        <div class="item"><img src="img/picturaPePanza/14optimized.jpg" alt="item14"></div>
-                        <div class="item"><img src="img/picturaPePanza/15optimized.jpg" alt="item15"></div>
-                        <div class="item"><img src="img/picturaPePanza/16optimized.jpg" alt="item16"></div>
-                        <div class="item"><img src="img/picturaPePanza/18optimized.jpg" alt="item17"></div>
-                        <div class="item"><img src="img/picturaPePanza/21optimized.jpg" alt="item18"></div>
-                        <div class="item"><img src="img/picturaPePanza/20optimized.jpg" alt="item19"></div>
-                        <div class="item"><img src="img/picturaPePanza/22optimized.jpg" alt="item20"></div>
-                        <div class="item"><img src="img/picturaPePanza/24optimized.jpg" alt="item21"></div>
-                        <div class="item"><img src="img/picturaPePanza/2optimized.jpg" alt="item22"></div>
-                        <div class="item"><img src="img/picturaPePanza/27optimized.jpg" alt="item23"></div>
-                        <div class="item"><img src="img/picturaPePanza/17optimized.jpg" alt="item24"></div>
-                        <div class="item"><img src="img/picturaPePanza/25optimized.jpg" alt="item25"></div>
-                        <div class="item"><img src="img/picturaPePanza/26optimized.jpg" alt="item26"></div>
-                        <div class="item"><img src="img/picturaPePanza/28optimized.jpg" alt="item27"></div>
-                        <div class="item"><img src="img/picturaPePanza/23optimized.jpg" alt="item28"></div>
-                        <div class="item"><img src="img/picturaPePanza/1optimized.jpg" alt="item29"></div>
-                    </div>
-                    <!--Begin Previous and Next buttons-->
-                    <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev"> <span
-                            class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
-                                                                                    href="#myGallery" role="button"
-                                                                                    data-slide="next"> <span
-                        class="glyphicon glyphicon-chevron-right"></span></a>
-             </div>
+                        <div class="carousel-item active"><img class="img-fluid modal-img" src="img/picturaPePanza/19optimized.jpg" alt="item0">
+                        </div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/3optimized.jpg" alt="item1"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/4optimized.jpg" alt="item2"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/5optimized.jpg" alt="item3"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/6optimized.jpg" alt="item4"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/29optimized.jpg" alt="item5"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/30optimized.jpg" alt="item6"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/7optimized.jpg" alt="item7"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/8optimized.jpg" alt="item8"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/9optimized.jpg" alt="item9"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/10optimized.jpg" alt="item10"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/11optimized.jpg" alt="item11"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/12optimized.jpg" alt="item12"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/13optimized.jpg" alt="item13"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/14optimized.jpg" alt="item14"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/15optimized.jpg" alt="item15"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/16optimized.jpg" alt="item16"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/18optimized.jpg" alt="item17"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/21optimized.jpg" alt="item18"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/20optimized.jpg" alt="item19"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/22optimized.jpg" alt="item20"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/24optimized.jpg" alt="item21"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/2optimized.jpg" alt="item22"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/27optimized.jpg" alt="item23"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/17optimized.jpg" alt="item24"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/25optimized.jpg" alt="item25"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/26optimized.jpg" alt="item26"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/28optimized.jpg" alt="item27"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/23optimized.jpg" alt="item28"></div>
+                        <div class="carousel-item"><img class="img-fluid modal-img" src="img/picturaPePanza/1optimized.jpg" alt="item29"></div>
 
-                <!--end modal-body--></div>
+                        <!--Begin Previous and Next buttons-->
+
+                        <a class="carousel-control-prev" href="#myGallery" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myGallery" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
             <div class="modal-footer">
-<!--                <div class="pull-left">
-                    <small>Photographs by <a href="https://placeimg.com" target="new">placeimg.com</a></small>
-                </div>-->
                 <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
-                <!--end modal-footer--></div>
-            <!--end modal-content--></div>
-        <!--end modal-dialoge--></div>
-    <!--end myModal-->>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -726,7 +739,7 @@
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Name</label>
                                 <input class="form-control trn" id="nameOrderForm" type="text" data-trn-holder="name"
-                                       placeholder="Name" required="required"
+                                       placeholder="Name" required="required" autocomplete='name'
                                        data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -736,7 +749,7 @@
                                 <label>Email Address</label>
                                 <input class="form-control trn" id="emailOrderForm" type="email" data-trn-holder="email"
                                        placeholder="Email Address"
-                                       required="required"
+                                       required="required" autocomplete='email'
                                        data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -745,7 +758,7 @@
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Phone Number</label>
                                 <input class="form-control trn" id="phone" type="tel" data-trn-holder="phone"
-                                       placeholder="Phone Number" required="required"
+                                       placeholder="Phone Number" required="required" autocomplete='tel'
                                        data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -754,7 +767,7 @@
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>City</label>
                                 <input class="form-control trn" id="city" type="text" data-trn-holder="city"
-                                       placeholder="City" required="required"
+                                       placeholder="City" required="required" autocomplete='address-level2'
                                        data-validation-required-message="Please enter your city.">
                                 <p class="help-block text-danger"></p>
                             </div>
