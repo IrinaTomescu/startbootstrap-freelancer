@@ -303,9 +303,9 @@
                             </div>
                             <div class="column">
                                 <ul class="list-inline">
-                                    <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                        <a href="#myGallery" data-slide-to="7">
-                                            <img class="img-thumbnail" src="img/picturaPePanza/7optimized.jpg"><br>
+                                    <li class="list-inline-item" >
+                                        <a href="img/picturaPePanza/8optimized.jpg" class="image-link">
+                                            <img src="img/picturaPePanza/8optimized.jpg" />
                                         </a>
                                     </li>
                                     <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
@@ -910,6 +910,31 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/freelancer.min.js"></script>
+
+<script>
+    // Initialize popup as usual
+    $('.image-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+        zoom: {
+            enabled: true, // By default it's false, so don't forget to enable it
+
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease-in-out', // CSS transition easing function
+
+            // The "opener" function should return the element from which popup will be zoomed in
+            // and to which popup will be scaled down
+            // By defailt it looks for an image tag:
+            opener: function(openerElement) {
+                // openerElement is the element on which popup was initialized, in this case its <a> tag
+                // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+
+    });
+</script>
 
 </body>
 
