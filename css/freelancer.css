@@ -452,8 +452,17 @@ a:focus, a:hover, a:active {
   display: block;
 }
 
-.card-text {
-  padding-bottom: 2rem;
+.white-background {
+  background-color: white;
+  backface-visibility: hidden;
+  opacity: 3;
+}
+
+.card-title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .portfolio {
