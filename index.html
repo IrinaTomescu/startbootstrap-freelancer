@@ -26,16 +26,31 @@
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/owl.theme.green.min.css" rel="stylesheet">
 
+    <style>
+        .mfp-with-zoom .mfp-container,
+        .mfp-with-zoom.mfp-bg {
+            opacity: 0;
+            -webkit-backface-visibility: hidden;
+            /* ideally, transition speed should match zoom duration */
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
 
-    <!--Bootstrap Modal + Carousel Gallery-->
-    <!--Bootstrap-->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        &lt;!&ndash;Latest stable release of jQuery Core Library&ndash;&gt;
-        <script src="https://code.jquery.com/jquery-1.12.2.min.js"
-                integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
-        &lt;!&ndash;Bootstrap JS&ndash;&gt;
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+        .mfp-with-zoom.mfp-ready .mfp-container {
+            opacity: 1;
+        }
 
+        .mfp-with-zoom.mfp-ready.mfp-bg {
+            opacity: 0.8;
+        }
+
+        .mfp-with-zoom.mfp-removing .mfp-container,
+        .mfp-with-zoom.mfp-removing.mfp-bg {
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -163,12 +178,12 @@
         <h2 class="text-center text-uppercase text-dark mb-0 trn">Portfolio</h2>
         <hr class="star-dark mb-5">
 
-        <div class="card-deck" id="accordion">
+        <div id="accordion">
             <div class="card">
                 <div class="card-header border-0 " id="headingOne">
                     <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                       aria-controls="collapseOne"><img class="img-fluid rounded-circle"
-                                                        src="img/portfolio/pictura%20pe%20pereti_optimiezed.jpg"
+                       aria-controls="collapseOne"><img class="img-fluid mfp-img-mobile"
+                                                        src="img/portfolio/pictura%20pe%20pereti.jpg"
                                                         alt=""></a>
                 </div>
                 <div class="card-body">
@@ -177,12 +192,105 @@
                            aria-controls="collapseOne">Mural paintings</a>
                     </h3>
                 </div>
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <h3 class="text-primary">Houses</h3>
+                            <div class="row">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower1"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower2"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower3"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower4"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower5"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower6"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower7"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower8"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower9"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower10"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3 class="text-primary">Offices</h3>
+                            <div class="row">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item"><img src="img/offices/office1.jpg" alt="flower1"></div>
+                                    <div class="item"><img src="img/offices/office2.jpg" alt="flower2"></div>
+                                    <div class="item"><img src="img/offices/office3.JPG" alt="flower3"></div>
+                                    <div class="item"><img src="img/offices/office4.JPG" alt="flower4"></div>
+                                    <div class="item"><img src="img/offices/office5.jpg" alt="flower5"></div>
+                                    <div class="item"><img src="img/offices/office6.jpg" alt="flower6"></div>
+                                    <div class="item"><img src="img/offices/office7.jpg" alt="flower7"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3 class="text-primary">Clinics</h3>
+                            <div class="row">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower1"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower2"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower3"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower4"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower5"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower6"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower7"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower8"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower9"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower10"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3 class="text-primary">Kid's dorm</h3>
+                            <div class="row">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item"><a href="img/kidsroom/kids1-mare.jpg" class="image-link"><img
+                                            src="img/kidsroom/kids1.jpg" alt="flower1"></a></div>
+                                    <div class="item"><a href="img/kidsroom/kids2-mare.jpg" class="image-link"><img
+                                            src="img/kidsroom/kids2.jpg" alt="flower2"></a></div>
+                                    <div class="item"><a href="img/kidsroom/kids3-mare.jpg" class="image-link"><img
+                                            src="img/kidsroom/kids3.jpg" alt="flower3"></a></div>
+                                    <div class="item"><a href="img/kidsroom/kids4-mare.jpg" class="image-link"><img
+                                            src="img/kidsroom/kids4.jpg" alt="flower4"></a></div>
+                                    <div class="item"><a href="img/kidsroom/kids5-mare.jpg" class="image-link"><img
+                                            src="img/kidsroom/kids5.jpg" alt="flower5"></a></div>
+                                    <div class="item"><a href="img/kidsroom/kids6-mare.JPG" class="image-link"><img
+                                            src="img/kidsroom/kids6.JPG" alt="flower5"></a></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3 class="text-primary">Restaurants</h3>
+                            <div class="row">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower1"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower2"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower3"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower4"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower5"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower6"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower7"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower8"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower9"></div>
+                                    <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower10"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-header border-0" id="headingTwo">
                     <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                       aria-controls="collapseTwo"> <img class="img-fluid rounded-circle"
-                                                         src="img/portfolio/5_optimized.jpg" alt="">
+                       aria-controls="collapseTwo"> <img class="img-fluid"
+                                                         src="img/portfolio/8.jpg" alt="">
                     </a>
                 </div>
                 <div class="card-body">
@@ -191,12 +299,184 @@
                            aria-controls="collapseTwo">Paintings on canvas</a>
                     </h3>
                 </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="column">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="0">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/19optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="1">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/3optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="2">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/4optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="3">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/5optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="4">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/6optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="5">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/29optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="6">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/30optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="7">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/7optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="8">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/8optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="9">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/9optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="10">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/10optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="11">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/11optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="12">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/12optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="13">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/13optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="14">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/14optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="15">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/15optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="16">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/16optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="17">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/18optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="18">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/21optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="19">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/20optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="20">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/22optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="21">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/24optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="22">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/2optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="23">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/27optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="24">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/17optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="25">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/25optimized.jpg"><br>
+                                        </a>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="26">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/26optimized.jpg"><br>
+                                        </a>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="27">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/28optimized.jpg"><br>
+                                        </a>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="28">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/23optimized.jpg"><br>
+                                        </a>
+                                    <li class="list-inline-item" data-toggle="modal" data-target="#canvasModal">
+                                        <a href="#canvasGallery" data-slide-to="29">
+                                            <img class="img-thumbnail" src="img/picturaPePanza/1optimized.jpg"><br>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-header border-0" id="headingThree">
                     <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                       aria-controls="collapseThree"> <img class="img-fluid rounded-circle"
-                                                           src="img/portfolio/Ilustratie_optimimzed.jpg" alt="">
+                       aria-controls="collapseThree"> <img class="img-fluid "
+                                                           src="img/portfolio/Ilustratie%20(1).JPG" alt="">
                     </a>
                 </div>
                 <div class="card-body">
@@ -205,283 +485,23 @@
                            aria-controls="collapseThree">Illustrations</a>
                     </h3>
                 </div>
-            </div>
-        </div>
-        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-                <div class="container">
-                    <h3 class="text-primary">Houses</h3>
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower1"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower2"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower3"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower4"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower5"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower6"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower7"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower8"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower9"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower10"></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <h3 class="text-primary">Offices</h3>
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="img/offices/office1.jpg" alt="flower1"></div>
-                            <div class="item"><img src="img/offices/office2.jpg" alt="flower2"></div>
-                            <div class="item"><img src="img/offices/office3.JPG" alt="flower3"></div>
-                            <div class="item"><img src="img/offices/office4.JPG" alt="flower4"></div>
-                            <div class="item"><img src="img/offices/office5.jpg" alt="flower5"></div>
-                            <div class="item"><img src="img/offices/office6.jpg" alt="flower6"></div>
-                            <div class="item"><img src="img/offices/office7.jpg" alt="flower7"></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <h3 class="text-primary">Clinics</h3>
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower1"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower2"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower3"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower4"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower5"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower6"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower7"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower8"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower9"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower10"></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <h3 class="text-primary">Kid's dorm</h3>
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="img/kidsroom/kids1.jpg" alt="flower1"></div>
-                            <div class="item"><img src="img/kidsroom/kids2.jpg" alt="flower2"></div>
-                            <div class="item"><img src="img/kidsroom/kids3.jpg" alt="flower3"></div>
-                            <div class="item"><img src="img/kidsroom/kids4.jpg" alt="flower4"></div>
-                            <div class="item"><img src="img/kidsroom/kids5.jpg" alt="flower5"></div>
-                            <div class="item"><img src="img/kidsroom/kids6.JPG" alt="flower5"></div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <h3 class="text-primary">Restaurants</h3>
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower1"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower2"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower3"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower4"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower5"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower6"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower7"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower8"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower9"></div>
-                            <div class="item"><img src="img/picturi_la_comanda.jpg" alt="flower10"></div>
-
-                        </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum
+                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                        nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                        nesciunt
+                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
                     </div>
                 </div>
             </div>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                <div class="row">
-                    <div class="column">
-                        <ul class="list-inline">
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="0">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/19optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="1">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/3optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="2">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/4optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="3">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/5optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="4">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/6optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="5">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/29optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="6">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/30optimized.jpg"><br>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul class="list-inline">
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="7">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/7optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="8">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/8optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="9">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/9optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="10">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/10optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="11">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/11optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="12">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/12optimized.jpg"><br>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul class="list-inline">
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="13">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/13optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="14">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/14optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="15">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/15optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="16">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/16optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="17">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/18optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="18">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/21optimized.jpg"><br>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul class="list-inline">
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="19">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/20optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="20">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/22optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="21">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/24optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="22">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/2optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="23">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/27optimized.jpg"><br>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="24">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/17optimized.jpg"><br>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <ul class="list-inline">
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="25">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/25optimized.jpg"><br>
-                                </a>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="26">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/26optimized.jpg"><br>
-                                </a>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="27">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/28optimized.jpg"><br>
-                                </a>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="28">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/23optimized.jpg"><br>
-                                </a>
-                            <li class="list-inline-item" data-toggle="modal" data-target="#myModal">
-                                <a href="#myGallery" data-slide-to="29">
-                                    <img class="img-thumbnail" src="img/picturaPePanza/1optimized.jpg"><br>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                3
-                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                laborum
-                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                nulla
-                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                nesciunt
-                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                labore sustainable VHS.
-            </div>
-        </div>
-
 
 
     </div>
@@ -725,8 +745,8 @@
 <!-- Modals -->
 
 
-<!--begin modal window-->
-<div class="modal fade" id="myModal" tabindex="-1">
+<!--painting on canvas modal window-->
+<div class="modal fade" id="canvasModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -736,7 +756,7 @@
             <div class="modal-body">
 
                 <!--begin carousel-->
-                <div id="myGallery" class="carousel slide" data-interval="false">
+                <div id="canvasGallery" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active"><img class="img-fluid modal-img"
                                                                src="img/picturaPePanza/19optimized.jpg" alt="item0">
@@ -802,10 +822,10 @@
 
                         <!--Begin Previous and Next buttons-->
 
-                        <a class="carousel-control-prev" href="#myGallery" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#canvasGallery" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         </a>
-                        <a class="carousel-control-next" href="#myGallery" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#canvasGallery" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
                     </div>
@@ -818,7 +838,6 @@
         </div>
     </div>
 </div>
-
 
 <!--Order Painting Modal-->
 <div class="portfolio-modal mfp-hide" id="orderPainting">
@@ -950,6 +969,30 @@
             }
         }
     })
+
+
+    // Initialize popup as usual
+    $('.image-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+        zoom: {
+            enabled: true, // By default it's false, so don't forget to enable it
+
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease-in-out', // CSS transition easing function
+
+            // The "opener" function should return the element from which popup will be zoomed in
+            // and to which popup will be scaled down
+            // By defailt it looks for an image tag:
+            opener: function (openerElement) {
+                // openerElement is the element on which popup was initialized, in this case its <a> tag
+                // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+
+    });
 </script>
 
 </body>
