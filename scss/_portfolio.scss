@@ -25,6 +25,18 @@
   display: block;
 }
 
+.btn-order{
+  color: white;
+  background-color: #9C057F;
+  border-color: #9C057F;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(#9C057F, 10%);
+    border-color: darken(#9C057F, 10%);
+  }
+}
+
 
 .portfolio {
   margin-bottom: -15px;

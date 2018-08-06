@@ -11,6 +11,17 @@
 
     <title>Madonia Art</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120812678-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120812678-2');
+    </script>
+
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -115,14 +126,11 @@
 </nav>
 
 <!-- Header -->
-<header class="masthead text-dark text-center">
+<header class="jumbotron masthead text-dark text-center">
 
-    <div class="container">
-        <!--<img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">-->
-        <h1 class="text-uppercase mb-0">Aici o sa vina video</h1>
-        <hr class="star-dark">
-        <h2 class="font-weight-light mb-0">Artist</h2>
-    </div>
+        <div class="container">
+            <img src="img/15319179_696052950569026_3951414017196286222_n.jpg">
+        </div>
 
 </header>
 
@@ -668,8 +676,8 @@
             <div class="col-md-4 col-lg-4 ">
                 <div class="d-block mx-auto">
                     <img class="img-thumbnail contact card-img-top" src="img/picturi_la_comanda.jpg" alt="">
-                    <a class="portfolio-item card" href="#orderPainting">
-                        <button type="button" class="btn btn-primary btn-xl trn">Place an order</button>
+                    <a class="portfolio-item card btn-order" href="#orderPainting">
+                        <button type="button" class="btn btn-order btn-xl trn">PLACE ORDER</button>
                     </a>
                 </div>
             </div>
