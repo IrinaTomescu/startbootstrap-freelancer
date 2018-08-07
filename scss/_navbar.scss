@@ -11,6 +11,9 @@
   .dropdown-menu{
     background: $secondary;
   }
+  .dropdown-item{
+    font-weight: bold;
+  }
   .dropdown-item:hover, .dropdown-item:focus {
     color: $white;
     background: $primary;
