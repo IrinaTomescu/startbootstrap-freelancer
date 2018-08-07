@@ -124,6 +124,10 @@ section h2 {
   background: #2C3E50;
 }
 
+#mainNav .dropdown-item {
+  font-weight: bold;
+}
+
 #mainNav .dropdown-item:hover, #mainNav .dropdown-item:focus {
   color: #fff;
   background: #18BC9C;
