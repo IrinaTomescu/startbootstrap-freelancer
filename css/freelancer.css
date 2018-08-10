@@ -209,7 +209,7 @@ section h2 {
 }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
+  padding-top: calc(1rem + 72px);
   padding-bottom: 6rem;
 }
 
@@ -225,7 +225,7 @@ header.masthead h2 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
+    padding-top: calc(2rem + 106px);
     padding-bottom: 6rem;
   }
   header.masthead h1 {
@@ -318,22 +318,76 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 
-/*.hero-image {
-  !* The image used *!
-  background-image: url("/img/lav.jpg");
+.masthead {
+  /* Animation delays */
+}
 
-  !* Position and center the image to scale nicely on all screens *!
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: calc(6rem + 106px);
-  padding-bottom: 12rem;
-  margin-bottom: -1vw;
-  margin-top: 2vw;
+.masthead #carouselExampleIndicators {
+  height: 100%;
+  width: 100%;
+}
 
-}*/
-/* Place text in the middle of the image */
+.masthead .skyblue {
+  background-color: #22c8ff;
+}
+
+.masthead .carousel-indicators {
+  bottom: 0;
+}
+
+.masthead .carousel-control.right,
+.masthead .carousel-control.left {
+  background-image: none;
+}
+
+.masthead .carousel-item {
+  min-height: 350px;
+  height: 100%;
+  width: 100%;
+}
+
+.masthead .carousel-caption h3,
+.masthead .carousel .icon-container {
+  background-color: #09c;
+}
+
+.masthead .carousel-caption h3 {
+  padding: .5em;
+}
+
+.masthead .carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 1em;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.masthead .carousel-caption button {
+  border-color: #00bfff;
+  margin-top: 1em;
+}
+
+.masthead .carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+
+.masthead .carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.masthead .carousel-caption button {
+  animation-delay: 3s;
+}
+
+.masthead h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 a {
   color: #18BC9C;
 }
@@ -432,6 +486,30 @@ a:focus, a:hover, a:active {
   color: #2C3E50;
 }
 
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 .row {
   display: -ms-flexbox;
   /* IE 10 */
@@ -462,6 +540,7 @@ a:focus, a:hover, a:active {
 
 .btn-order {
   color: white;
+  font-weight: bolder;
   background-color: #9C057F;
   border-color: #9C057F;
 }
