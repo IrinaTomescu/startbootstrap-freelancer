@@ -132,7 +132,8 @@ $(function() {
         "Contact me":{
             ro: "Contactează-mă"
         },
-        Cancel:{
+        cancel:{
+            en: "Cancel",
             ro: "Anulează"
         },
         Send:{
@@ -169,14 +170,39 @@ $(function() {
         "Painting order":{
             ro: "Comandă de pictură"
         },
-        "Contact Me":{
+        "Say hi!":{
             ro: "Contactează-mă"
         },
-        "Place an order":{
+        "PLACE ORDER":{
             ro: "Plasează o comandă"
+        },
+        Houses:{
+            ro: "Reședințe"
+        },
+        Offices:{
+            ro: "Birouri"
+        },
+        Clinics:{
+            ro: "Policlinici"
+        },
+        "Kid's dorm":{
+            ro: "Camere de copii"
+        },
+        Restaurants:{
+            ro: "Localuri"
+        },
+        source_photo:{
+            en: "photo by",
+            ro: "fotografie de"
+        },
+        text_caption_slide_1: {
+            en: "Soon to be revealed new projects, but give me a little more time to hold my precious baby.",
+            ro: "În curând voi dezvălui noi proiecte, dar dați-mi puțin timp să imi mai țin copilul în brațe."
+        },
+        caption_text_slide_2:{
+            en: "...meanwhile, you can request a painting !",
+            ro: "...între timp, poți solicita o pictură !"
         }
-
-
 
 
 

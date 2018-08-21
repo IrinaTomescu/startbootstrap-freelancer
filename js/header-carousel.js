@@ -14,7 +14,7 @@
     }
 
     //Variables on page load
-    var $myCarousel = $("#carouselExampleIndicators"),
+    var $myCarousel = $("#carouselMasthead"),
         $firstAnimatingElems = $myCarousel
             .find(".carousel-item:first")
             .find("[data-animation ^= 'animated']");
