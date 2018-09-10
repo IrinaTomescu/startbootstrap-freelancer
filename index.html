@@ -4,6 +4,25 @@
 <head>
 
     <meta charset="utf-8">
+
+    <!-- Page hiding snippet (recommended)  -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+        {'GTM-N3JHDTX':true});</script>
+    <!-- Modified Analytics tracking code with Optimize plugin -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-120812678-2', 'auto');
+        ga('require', 'GTM-N3JHDTX');
+        ga('send', 'pageview');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords"
           content="Madonia Art, mural, painting, artist, painter, canvas, illustrator, Povestile Cristinei ">
@@ -19,18 +38,17 @@
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120812678-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120812678-2"></script>-->
+    <!--<script>-->
+        <!--window.dataLayer = window.dataLayer || [];-->
+        <!--function gtag() {-->
+            <!--dataLayer.push(arguments);-->
+        <!--}-->
+        <!--gtag('js', new Date());-->
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        <!--gtag('config', 'UA-120812678-2');-->
+    <!--</script>-->
 
-        gtag('js', new Date());
-
-        gtag('config', 'UA-120812678-2');
-    </script>
 
 
     <!-- Bootstrap core CSS -->
@@ -146,7 +164,7 @@
 
             <!-- first slide -->
             <div class="carousel-item active skyblue">
-                <img class="img-fluid" src="img/mom-with-baby.jpg" alt="Artist wiht her baby in her arms">
+                <strong><img class="img-fluid" src="img/mom-with-baby.jpg" alt="Madonia Art Artist wiht her baby in her arms"></strong>
                     <div class="carousel-caption d-md-block">
                     <h3 data-animation="animated flipInX" class="trn" data-trn-key="text_caption_slide_1">
                         Soon to be revealed new projects, but give me a little more time to hold my precious baby.
@@ -244,7 +262,7 @@
                             <h3 class="text-primary trn">Offices</h3>
                             <div class="row">
                                 <div class="owl-carousel owl-theme">
-                                    <div class="item"><a href="img/offices/office1-min.jpg" class="image-link"><img src="img/offices/office1-min.jpg" alt="Mural painting office"></a></div>
+                                    <div class="item"><strong><a href="img/offices/office1-min.jpg" class="image-link"><img src="img/offices/office1-min.jpg" alt="Madonia Art mural painting office"></a></strong></div>
                                     <div class="item"><a href="img/offices/office2-min.jpg" class="image-link"><img src="img/offices/office2-min.jpg" alt="Mural painting office"></a></div>
                                     <div class="item"><a href="img/offices/office3-min.jpg" class="image-link"><img src="img/offices/office3-min.jpg" alt="Mural painting office"></a></div>
                                     <div class="item"><a href="img/offices/office4-min.jpg" class="image-link"><img src="img/offices/office4-min.jpg" alt="Mural painting office"></a></div>
