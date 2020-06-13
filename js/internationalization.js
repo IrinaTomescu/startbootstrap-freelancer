@@ -200,8 +200,8 @@ $(function() {
             ro: "În curând voi dezvălui noi proiecte, dar dați-mi puțin timp să imi mai țin copilul în brațe."
         },
         caption_text_slide_2:{
-            en: "...meanwhile, you can request a painting !",
-            ro: "...între timp, poți solicita o pictură !"
+            en: "Request a painting !",
+            ro: "Solicită o pictură !"
         }
 
 

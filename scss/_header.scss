@@ -9,6 +9,9 @@
   .skyblue {
     background-color:$primary;
   }
+  .skydark {
+    background-color:$secondary;
+  }
 
   .carousel-indicators {
     bottom: 0;
@@ -53,6 +56,11 @@
   .carousel-caption button {
     animation-delay: 1.3s;
   }
+}
+
+.img-fluid{
+height: 450px;
+
 }
 @media only screen
 and (min-width : 320px)
